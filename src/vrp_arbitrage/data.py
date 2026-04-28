@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import numpy as np
-import pandas as p
+import pandas as pd
 
 
 def normalize_option_type(value: str) -> str:
