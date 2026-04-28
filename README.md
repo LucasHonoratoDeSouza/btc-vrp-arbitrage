@@ -913,6 +913,6 @@ Os parâmetros foram desenvolvidos com conhecimento do período histórico. Mesm
 - **Deribit DVOL Index:** Metodologia em [deribit.com/dvol](https://www.deribit.com/dvol)
 - **Variance Swaps:** Demeterfi, Derman et al. (1999) — *More Than You Ever Wanted to Know About Volatility Swaps*
 - **VRP em Crypto:** Alexander & Imeraj (2023) — *Delta Hedging Bitcoin Options with a Smile*
-- **GARCH(1,1):** Bollerslev (1986) — *Generalized Autoregressive Conditional Heteroskedasticity*
+- **GARCH(1,1):** Bollerslev (1986) — *Generalized Autoregressive Conditional Heteroskedasticity
 - **Kelly Criterion:** Kelly (1956) — *A New Interpretation of Information Rate*
 - **Walk-Forward Validation:** Pardo (2008) — *The Evaluation and Optimization of Trading Strategies*
