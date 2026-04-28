@@ -3,7 +3,7 @@
 **Linguagem:** Python 3.10+  
 **Dados:** Deribit BTC-PERPETUAL (OHLC horário) + Deribit DVOL Index (IV horário)  
 **Período validado:** Mar-2021 → Abr-2026 (5,1 anos, DVOL real, sem proxy sintético)  
-**Melhor resultado proxy corrigido:** CAGR 53,6%/ano, Sharpe 2,66, max drawdown -33,5%  
+**Melhor resultado proxy:** CAGR 53,6%/ano, Sharpe 2,66, max drawdown -33,5%  
 **Status live:** não pronto para capital real; falta validação com cadeia histórica de opções e execução ponto-a-ponto.
 
 ---
