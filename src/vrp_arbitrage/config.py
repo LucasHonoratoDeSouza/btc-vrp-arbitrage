@@ -1,0 +1,72 @@
+from dataclasses import dataclass
+from typing import Optional
+
+
+@dataclass
+class BacktestConfig:
+    initial_capital: float = 10_000.0
+    garch_window_hours: int = 24 * 30
+    garch_refit_interval_hours: int = 24
+    ewma_span_hours: int = 72
+    garch_weight: float = 0.65
+    forecast_horizon_hours: int = 24 * 7
+    zscore_window: int = 24 * 7
+    delta_hedge_threshold: float = 0.15
+    maker_fee: float = 0.0003
+    taker_fee: float = 0.0003
+    option_fee_cap_pct: float = 0.125
+    slippage_ticks: float = 0.5
+    tick_size: float = 0.5
+    risk_free_rate: float = 0.0
+    vrp_entry_z: float = 2.0
+    vrp_exit_z: float = 0.5
+    min_vrp_edge: float = 0.02
+    require_z_and_quantile: bool = True
+    signal_confirmation_periods: int = 2
+    cooldown_hours: int = 6
+    min_expected_edge_after_cost: float = 0.0
+    min_expected_edge_to_stress: float = 0.0
+    enable_regime_filter: bool = True
+    max_rv_percentile: float = 0.85
+    max_abs_24h_return: float = 0.08
+    kurtosis_window: int = 24 * 7
+    kurtosis_high: float = 4.0
+    max_holding_hours: int = 24 * 7
+    kelly_fraction: float = 0.5
+    vega_stop_pct: float = 0.35
+    maker_requote_minutes: int = 15
+    maker_max_requotes: int = 4
+    target_dte_hours: int = 24 * 7
+    min_dte_hours: int = 24 * 3
+    max_dte_hours: int = 24 * 14
+    target_short_delta: float = 0.16
+    target_wing_delta: float = 0.05
+    base_contracts: float = 1.0
+    min_contracts: float = 0.1
+    max_contracts: float = 10.0
+    delta_no_trade_zone: float = 0.05
+    use_maker_exits: bool = False
+    use_variance_proxy: bool = False
+    variance_notional: float = 1.0
+    variance_trade_cost: float = 0.0005
+    vrp_entry_quantile: float = 0.7
+    vrp_exit_quantile: float = 0.5
+    min_annual_vol: float = 0.05
+    max_annual_vol: float = 3.0
+    stress_crash_pct: float = -0.20
+    stress_gap_hours: int = 4
+    stress_vol_shock: float = 0.35
+    max_bid_ask_spread_pct: float = 0.25
+    min_option_bid: float = 1.0
+    min_option_bid_size: float = 0.1
+    min_option_ask_size: float = 0.1
+    min_option_volume: float = 0.0
+    min_option_open_interest: float = 0.0
+    enforce_option_margin: bool = True
+    max_margin_utilization: float = 0.50
+    maintenance_margin_fraction: float = 0.50
+    short_option_margin_spot_pct: float = 0.15
+    short_option_margin_floor_pct: float = 0.10
+    max_trade_stress_loss_pct: float = 0.02
+    entry_start_time: Optional[str] = None
+    entry_end_time: Optional[str] = None
